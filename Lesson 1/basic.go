@@ -1,5 +1,6 @@
 package main
 
+// Include I/O and string formatter methods.
 import "fmt"
 
 func main() {
