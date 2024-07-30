@@ -1,12 +1,33 @@
 # GO-GO-GO
+
 Golang's benefits are:
 
-1. **Simple Syntax**: Easy to learn and read.
-2. **Fast**: Compiles quickly and runs efficiently.
-3. **Concurrency**: Handles multiple tasks well.
-4. **Rich Standard Library**: Useful built-in tools and functions.
-5. **Cross-Platform**: Runs on various operating systems.
-6. **Built-In Tools**: Includes tools for testing and formatting.
-7. **Garbage Collection**: Manages memory automatically.
-8. **Strong Community**: Active support and resources.
-9. **Modern Use**: Ideal for microservices and cloud apps.
+- **Simple Syntax**: Easy to learn and read.
+- **Fast**: Compiles quickly and runs efficiently.
+- **Concurrency**: Handles multiple tasks well.
+- **Modern Use**: Ideal for microservices and cloud apps.
+- **Garbage Collection**: Manages memory automatically.
+- **Rich Standard Library**: Useful built-in tools and functions.
+- **Cross-Platform**: Runs on various operating systems.
+- **Built-In Tools**: Includes tools for testing and formatting.
+- **Strong Community**: Active support and resources.
+
+## Command
+
+- IDE recommend: **Visual Studio Code (VS Code)**, **GoLand**, **IntelliJ IDEA**
+- Execute go file: `go run xxxx.go`
+- Formate go file: `gofmt -w xxxx.go`
+
+## Step by Step
+
+Tour of Go,Go by example, Web Dev, Create a module
+, CLIs
+
+1. [Download](https://go.dev/dl/) and install the go.
+2. Lesson 1: Basic Method.
+3. Lesson 2: Packages, variables and functions.
+
+### Reference:
+
+- [GO](https://go.dev/)
+- [GO Doc](https://go.dev/doc/)
