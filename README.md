@@ -20,12 +20,12 @@ Golang's benefits are:
 
 ## Step by Step
 
-Tour of Go,Go by example, Web Dev, Create a module
-, CLIs
+Tour of Go,Go by example, Web Dev, Create a module, CLIs
 
 1. [Download](https://go.dev/dl/) and install the go.
 2. Lesson 1: Basic Method.
 3. Lesson 2: Packages, variables and functions.
+4. Lesson 3: Flow control statements: for, if, else, switch and defer
 
 ### Reference:
 
