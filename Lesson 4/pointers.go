@@ -3,7 +3,8 @@ package main
 import "fmt"
 
 // Go has pointers. A pointer holds the memory address of a value.
-// Go has "dereferencing" and "indirecting".
+// "Dereferencing `&p`" focuses on the action of using the pointer to access the data.
+// "Indirecting `*p`" is the concept of referring to a value indirectly through a pointer rather than directly.
 // Unlike C, Go has no pointer arithmetic.
 func main() {
 	i, j := 42, 2701
