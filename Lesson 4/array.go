@@ -2,10 +2,10 @@ package main
 
 import "fmt"
 
-// An array's length is part of its type, so arrays cannot be resized.
+// An array's "length" is part of its type, so arrays cannot be resized.
 // This seems limiting, but don't worry; Go provides a convenient way of working with arrays.
 func main() {
-	var a [2]string
+	var a [2]string // Array's "length is fixed"
 	a[0] = "Hello"
 	a[1] = "Word"
 	fmt.Println(a[0], a[1])
