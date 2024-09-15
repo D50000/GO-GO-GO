@@ -8,7 +8,7 @@ func main() {
 	fmt.Println(pow)
 
 	for i := range pow {
-		// Shift 1 left i unit
+		// Shift 1 left i undefined-int
 		pow[i] = 1 << uint(i)
 	}
 
