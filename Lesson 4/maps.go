@@ -12,6 +12,8 @@ type Vertex struct {
 var m map[string]Vertex
 
 func main() {
+	// "map" and "slice" is a reference type.
+	// Need to use "make" to initial after declare or it will show "panic error in nil data".
 	m = make(map[string]Vertex)
 	// Input float64 constructor into Vertex struct type
 	m["Bell Labs"] = Vertex{
