@@ -1,14 +1,29 @@
 package main
 
-// TODO: Fix no required module provides package golang.org/x/tour/wc
 import (
+	"fmt"
+	"strings"
+
 	"golang.org/x/tour/wc"
 )
 
 func WordCount(s string) map[string]int {
-	return map[string]int{"x": 1}
+	var words []string = strings.Split(s, " ")
+	fmt.Println(words)
+
+	var result = make(map[string]int)
+	for _, v := range words {
+		_, isExists := result[v];
+		if isExists {
+			result[v] += 1
+		} else {
+			result[v] = 1
+		}
+	}
+	return result
 }
 
 func main() {
+	fmt.Println("Test run:")
 	wc.Test(WordCount)
 }
