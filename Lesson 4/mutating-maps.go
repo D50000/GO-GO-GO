@@ -18,7 +18,7 @@ func main() {
 	fmt.Println("The value:", m["Answer"])
 
 	// Test that a key is present with a two-value assignment.
-	v, ok := m["Answer"]
+	v, ok := m["Answer"] // syntax => value, isExists = m["key"] 
 	// If key is in m, ok is true. If not, ok is false.
 	fmt.Println("The value:", v, "Present?", ok)
 }
