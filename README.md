@@ -15,6 +15,9 @@ Golang's benefits are:
 ## Command
 
 - IDE recommend: **Visual Studio Code (VS Code)**, **GoLand**, **IntelliJ IDEA**
+- Install and initial the project: Run `go install ./path/to/your/package` command.
+- Clean and add the `go.mod`, `go.sum` files: Run `go mod tidy` command.
+- Build and compile the project: Run `go build ./path/to/your/package` command.
 - Execute go file: `go run xxxx.go`
 - Formate go file: `gofmt -w xxxx.go`
 
