@@ -1,8 +1,14 @@
 package main
-// TODO: Fix no required module provides package golang.org/x/tour/pic
-import "golang.org/x/tour/pic"
+
+// Use `go list -m golang.org/x/tour` to check the package install or not.
+import (
+	"fmt"
+
+	"golang.org/x/tour/pic"
+)
 
 func Pic(dx, dy int) [][]uint8 {
+	// code here
 }
 
 func main() {
