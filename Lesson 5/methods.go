@@ -5,6 +5,7 @@ import (
 	"math"
 )
 
+// Declare a struct type
 type Vertex struct {
 	X, Y float64
 }
