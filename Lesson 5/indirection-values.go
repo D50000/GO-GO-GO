@@ -20,9 +20,10 @@ func AbsFunc(v Vertex) float64 {
 func main() {
 	v := Vertex{3, 4}
 	fmt.Println(v.Abs())
-	fmt.Println(v.Abs())
+	fmt.Println(AbsFunc(v)) // Compile OK!
+	// fmt.Println(AbsFunc(&v)) // Compile error!
 
 	p := &Vertex{4, 3}
-	fmt.Println(p.Abs())
+	fmt.Println(p.Abs()) // In this case, the method call p.Abs() is interpreted as (*p).Abs(). The pointer receiver is called "automatically".
 	fmt.Println(AbsFunc(*p))
 }
