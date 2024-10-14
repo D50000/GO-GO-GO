@@ -19,9 +19,8 @@ func main() {
 	a = f  // a MyFloat implements Abser's Abs()
 	a = &v // a *Vertex implements Abser's Abs()
 
-	// In the following line, v is a Vertex (not *Vertex)
-	// and does NOT implement Abser.
-	a = v // Compile error.
+	// In the following line, v is a Vertex (not *Vertex) and does NOT implement Abser.
+	a = v // Compile error. It can't adapt func (v *Vertex) Abs() for implement.
 
 	fmt.Println(a.Abs())
 }
