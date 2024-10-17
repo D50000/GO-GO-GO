@@ -23,6 +23,6 @@ func Scale(v *Vertex, f float64) {
 // Here we see the Abs and Scale methods rewritten as functions.
 func main() {
 	v := Vertex{3, 4}
-	Scale(&v, 10) // With no "Pointer" it will just copy of struct. When invoke "v" again will refresh back to initial.
+	Scale(&v, 10) // With no "Pointer Dereference" it will just copy of struct. When invoke "v" again will refresh back to initial.
 	fmt.Println(Abs(v))
 }
