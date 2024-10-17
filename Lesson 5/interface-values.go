@@ -13,12 +13,14 @@ type T struct {
 	S string
 }
 
+// Indirecting `*p`, pointer receiver.
 func (t *T) M() {
 	fmt.Println(t.S)
 }
 
 type F float64
 
+// Golang simple type also can declare method for it. Concept similar with "Class".
 func (f F) M() {
 	fmt.Println(f)
 }
@@ -26,13 +28,13 @@ func (f F) M() {
 func main() {
 	var i I
 
-	i = &T{"HELLO"}
+	i = &T{"HELLO"} // Construct and initial the struct with "Dereferencing &p"
 	describe(i)
-	i.M()
+	i.M() // T struct implement the M()
 
-	i = F(math.Pi)
+	i = F(math.Pi) // Initial the type with float.
 	describe(i)
-	i.M()
+	i.M() // F type implement the M()
 }
 
 func describe(i I) {
