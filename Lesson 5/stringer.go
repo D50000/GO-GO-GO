@@ -1,5 +1,10 @@
 package main
 
+// Default interface: "Stringer" is a type that can describe itself as a string.
+//
+// type Stringer interface {
+//     String() string
+// }
 import "fmt"
 
 type Person struct {
@@ -7,12 +12,7 @@ type Person struct {
 	Age  int
 }
 
-// Ubiquitous interfaces is Stringer
-// Default interface. A Stringer is a type that can describe itself as a string.
-// type Stringer interface {
-//     String() string
-// }
-func (p Person) String() string {
+func (p Person) String() string { // Overwrite the "String()" method in fmt package.
 	return fmt.Sprintf("%v (%v years)", p.Name, p.Age)
 }
 
