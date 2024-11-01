@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func do(i interface{}) {
-	switch v := i.(type) {
+	switch v := i.(type) { // "Type Switch": Assertion type with switch case statement.
 	case int:
 		fmt.Printf("Twice %v is %v\n", v, v*2) // %v prints the "value" 
 	case string:

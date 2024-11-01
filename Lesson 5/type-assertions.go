@@ -5,7 +5,7 @@ import "fmt"
 func main() {
 	var i interface{} = "Hello"
 
-	// Type Assertion
+	// Type Assertion can check the data type.
 	S := i.(string)
 	fmt.Println(s) // Hello
 
