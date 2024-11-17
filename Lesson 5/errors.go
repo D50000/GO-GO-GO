@@ -12,7 +12,7 @@ type MyError struct {
 
 // Overwrite default "Error() method".
 func (e *MyError) Error() string {
-	return fmt.Sprintf("at %v, %s", e.When, e.What)
+	return fmt.Sprintf("Now is %v, %s", e.When, e.What)
 }
 
 // The "error type" is a "built-in interface" similar to fmt.Stringer:
