@@ -4,8 +4,20 @@ import "golang.org/x/tour/reader"
 
 type MyReader struct{}
 
-// TODO: Add a Read([]byte) (int, error) method to MyReader.
+// Replace the default io.Reader function:
+//
+//	type Reader interface {
+//	    Read(p []byte) (n int, err error)
+//	}
+func (r MyReader) Read(p []byte) (int, error) {
+	for i := range p {
+		p[i] = 'A' // Replace the character to 'A'.
+	}
+
+	return len(p), nil // error nil for run successfully.
+}
 
 func main() {
-	reader.validate(MyReader{})
+	// Golang official library check tool.
+	reader.Validate(MyReader{})
 }
