@@ -24,6 +24,6 @@ func main() {
 	v := Vertex{3, 4}
 	// With a value receiver, the Scale method operates on a copy of the original Vertex value. 
 	// When the v.Scale(10) finish, it will reset back to initial "Vertex{3, 4}".
-	v.Scale(10)
+	v.Scale(10) // But pointer receivers can manipulate and update the struct properties.
 	fmt.Println(v.Abs())
 }
