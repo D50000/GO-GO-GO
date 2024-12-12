@@ -49,6 +49,7 @@ Tour of Go,Go by example, Web Dev, Create a module, CLIs
 5. Lesson 4: More types: structs, slices, and maps.
 6. Lesson 5: Methods and interfaces
 7. Lesson 6: Generics
+8. Lesson 7: Concurrency
 
 ### Reference:
 
