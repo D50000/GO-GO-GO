@@ -50,8 +50,8 @@ func (l *List[T]) Length() int {
 }
 
 // "Create" a new linked list with an initial value.
-func NewList[T any](value T) *List[T] {
-	return &List[T]{val: value}
+func NewList[T any](value T) *List[T] { // return pointer list.
+	return &List[T]{val: value} // Returns a pointer (heap-allocated).
 }
 
 func main() {
