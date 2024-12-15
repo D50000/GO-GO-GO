@@ -9,10 +9,10 @@ import (
 // - A method to traverse and print the elements.
 // - Additional helper functions as needed.
 
-// "List" represents a singly-linked list that holds values of any type.
+// "List" represents a "singly-linked list" that holds values of any type.
 type List[T any] struct {
-	next *List[T]
-	val  T
+	next *List[T] // A pointer to the next element in the list. So it will links all element in the list together.
+	val  T        // The value of the current element.
 }
 
 // "Append" adds a new value to the end of the list.
@@ -23,7 +23,7 @@ func (l *List[T]) Append(value T) {
 		current = current.next
 	}
 	// Add a new node with the given values.
-	current.next = &List[T]{val: value}
+	current.next = &List[T]{val: value} // Because l is *List[T], can't use current.next = List[T]{val: value}. Need to use pointer syntax to assign value.
 }
 
 // "Traverse prints" all elements in the list.
@@ -50,7 +50,7 @@ func (l *List[T]) Length() int {
 }
 
 // "Create" a new linked list with an initial value.
-func NewList[T any](value T) *List[T] { // return pointer list.
+func NewList[T any](value T) *List[T] { // Return pointer list.
 	return &List[T]{val: value} // Returns a pointer (heap-allocated).
 }
 
