@@ -8,7 +8,7 @@ import (
 func say(s string) {
 	for i := 0; i < 5; i++ {
 		time.Sleep(100 * time.Microsecond)
-		fmt.Print(s)
+		fmt.Println(s)
 	}
 }
 
