@@ -6,8 +6,8 @@ import (
 )
 
 func main() {
-	tick := time.Tick(100 * time.Microsecond)
-	boom := time.After(500 * time.Microsecond)
+	tick := time.Tick(100 * time.Microsecond)  // Tick: Periodic Timer
+	boom := time.After(500 * time.Microsecond) // After: One-Time Timer
 	for {
 		select {
 		case <-tick:
