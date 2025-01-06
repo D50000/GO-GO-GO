@@ -18,7 +18,7 @@ func main() {
 		default:
 			// The default case in a select is run if no other case is ready.
 			{
-				fmt.Println("   .")
+				fmt.Println("    .")
 				time.Sleep(50 * time.Microsecond)
 			}
 		}
