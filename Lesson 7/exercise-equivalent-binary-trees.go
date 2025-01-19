@@ -55,6 +55,7 @@ func Same(t1, t2 *tree.Tree) bool {
 }
 
 func main() {
+	// Test Walk function.
 	ch := make(chan int)
 	go func() {
 		Walk(tree.New(1), ch)
@@ -62,10 +63,12 @@ func main() {
 		close(ch)
 	}()
 
+	// Print literal ch value.
 	for v := range ch {
 		fmt.Println(v)
 	}
 
-	fmt.Println(Same(tree.New(1), tree.New(1)))
-	fmt.Println(Same(tree.New(1), tree.New(2)))
+	// Test sme function.
+	fmt.Println(Same(tree.New(1), tree.New(1))) // True
+	fmt.Println(Same(tree.New(1), tree.New(2))) // False
 }
